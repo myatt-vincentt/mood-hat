@@ -21,6 +21,7 @@ beanie. No text and no buttons on screen.
 - The pieces are vincentt.studio head accessories on the SDK's canonical head fit, steadied by a
   speed-adaptive spring with the head occluder in the same group, and they react to your face as
   their author built them (tears flow when you frown, Zzz grows with your eyes closed).
+- Thumbnail: `public/images/mood-hat-thumbnail.jpg` (calm, then angry; the share image).
 - Models: `public/models/vincentt-*.glb`; credits in `CREDITS.md`. To change what a mood wears or
   its colours, edit `src/mood/moods.ts`.
 - Dev preview without a camera: the media switcher starts on the SDK's "Person Shaking Head"
