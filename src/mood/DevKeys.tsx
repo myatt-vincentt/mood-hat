@@ -1,6 +1,6 @@
 // Dev-only: keys 0–7 pick a mood by hand (0 = calm), A goes back to reading
 // your face; window.__mood exposes the store, the live face readings and the
-// mood scores for checks. Scene.tsx lazy-imports this behind an inline
+// mood scores for debugging. Scene.tsx lazy-imports this behind an inline
 // NODE_ENV check, so it never reaches production.
 import { useEffect } from "react";
 import { useThree } from "@react-three/fiber";

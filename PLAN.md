@@ -1,9 +1,9 @@
 # Plan — Mood Hat
 
 A propeller beanie that changes with your mood. Built on SDK 2.0.0-alpha.9 with the vincentt.studio
-head accessories; the head pipeline is shared with Try-On Studio and Spirit Animal Reveal.
+head accessories.
 
-## Decisions (from the creator)
+## Design
 
 - Seven moods: happy, angry, surprised, sleepy, sad, kiss (pucker) and thinking (look up).
 - One mood at a time: the strongest wins; the old one shrinks away as the new one pops in.
@@ -32,11 +32,9 @@ head accessories; the head pipeline is shared with Try-On Studio and Spirit Anim
 - `LipHearts.tsx`: the kiss's hearts, a puff at the start then a stream that grows with the pucker,
   fanning out from the lips (instanced, on the filtered head).
 - Dev only: `DevKeys.tsx` (keys 0–7 / A, `window.__mood`), `DevMediaSwitcher.tsx`, `?occ`.
-- Checks: `audit/` (look sheets, hat fit while the head turns, the mood reading on each clip).
 
 ## Known limits
 
-- MediaPipe reads a pursed "oh" much like a kiss; the SDK's "Person Looking" video gets a brief
-  kiss when he purses his lips.
-- The SDK's sample videos only show calm and smiling faces; the other moods are covered by the
-  unit tests and need a webcam check.
+- A pursed "oh" can read as a kiss for a moment: the face model reads the two much alike.
+- The SDK's sample videos only show calm and smiling faces; to see the other moods, use a webcam,
+  your own clip in `dev-media/`, or keys 0–7.

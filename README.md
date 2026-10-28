@@ -5,15 +5,15 @@ look up in thought, and the hat changes with you: its colours wash over to the m
 propeller speeds up or stops, and the mood's own pieces pop in. Relax and it's back to the calm
 beanie. No text and no buttons on screen.
 
-| Mood | Your face | The hat |
-|---|---|---|
-| 😊 Happy | smile | candy colours, heart eyes, floating hearts |
-| 😠 Angry | brows down | red and black, devil horns, grumpy cloud, nose steam |
-| 😮 Surprised | mouth open, brows up | rainbow, star eyes, "!" pop, mind-blown burst |
-| 😴 Sleepy | eyes closed about a second | night blue, the propeller stops, moon, Zzz, nose bubble |
-| 😢 Sad | mouth corners down | rainy blue, rain cloud over the hat, tears |
-| 😘 Kiss | pucker | hot pink, hearts circling the hat, heart gems, hearts from your lips |
-| 🤔 Thinking | look up | purple and gold, thought bubble, question marks |
+| Mood         | Your face                  | The hat                                                              |
+| ------------ | -------------------------- | -------------------------------------------------------------------- |
+| 😊 Happy     | smile                      | candy colours, heart eyes, floating hearts                           |
+| 😠 Angry     | brows down                 | red and black, devil horns, grumpy cloud, nose steam                 |
+| 😮 Surprised | mouth open, brows up       | rainbow, star eyes, "!" pop, mind-blown burst                        |
+| 😴 Sleepy    | eyes closed about a second | night blue, the propeller stops, moon, Zzz, nose bubble              |
+| 😢 Sad       | mouth corners down         | rainy blue, rain cloud over the hat, tears                           |
+| 😘 Kiss      | pucker                     | hot pink, hearts circling the hat, heart gems, hearts from your lips |
+| 🤔 Thinking  | look up                    | purple and gold, thought bubble, question marks                      |
 
 - The first two seconds with your face in view learn your calm face, so a resting frown or a
   mouth that turns down doesn't count as a mood (`src/mood/detect.ts`, tested). The strongest mood
@@ -26,7 +26,7 @@ beanie. No text and no buttons on screen.
   its colours, edit `src/mood/moods.ts`.
 - Dev preview without a camera: the media switcher starts on the SDK's "Person Shaking Head"
   video; keys 0–7 pick a mood by hand, A goes back to reading your face; `?occ` draws the head
-  occluder. Checks in `audit/`. How it works: `PLAN.md`.
+  occluder. How it works: `PLAN.md`.
 
 ---
 

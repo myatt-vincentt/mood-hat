@@ -9,8 +9,8 @@ export const live = {
   shakes: 0,
   /** The mood scores (MoodInput; null while learning your calm face). */
   scores: null as Readonly<Record<Expressive, number>> | null,
-  /** Dev checks only (window.__mood): stands in for the face's readings. */
+  /** Dev only (window.__mood): stands in for the face's readings. */
   override: null as Readonly<Record<string, number | undefined>> | null,
-  /** Dev checks only: a mood picked by hand; the face reading waits. */
+  /** Dev only: a mood picked by hand; the face reading waits. */
   manual: false,
 };
